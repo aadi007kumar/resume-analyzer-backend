@@ -13,13 +13,11 @@ export function createApp() {
 
     app.use(
         cors({
-            origin: [
-            "https://aadi007kumar.github.io",
-            "https://aadi007kumar.github.io/resume-analyzer-frontend"
-            ],
-            credentials: true
+          origin: "https://aadi007kumar.github.io",
+          methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+          credentials: true,
         })
-    );
+      );
     app.use(express.json());
     app.use("/uploads", express.static(path.resolve("uploads")));
 
