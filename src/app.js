@@ -13,7 +13,10 @@ export function createApp() {
 
     app.use(
         cors({
-            origin: "https://aadi007kumar.github.io",
+            origin: [
+            "https://aadi007kumar.github.io",
+            "https://aadi007kumar.github.io/resume-analyzer-frontend"
+            ],
             credentials: true
         })
     );
