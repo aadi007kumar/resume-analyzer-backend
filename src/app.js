@@ -13,7 +13,8 @@ export function createApp() {
 
     app.use(
         cors({
-            origin: process.env.FRONTEND_ORIGIN?.split(",").map((entry) => entry.trim()) || "*"
+            origin: "https://aadi007kumar.github.io",
+            credentials: true
         })
     );
     app.use(express.json());
