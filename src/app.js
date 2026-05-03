@@ -7,6 +7,7 @@ import analysisRoutes from "./routes/analysisRoutes.js";
 import { errorHandler, notFoundHandler } from "./middleware/errorHandler.js";
 
 dotenv.config();
+console.log("NEW DEPLOY CHECK")
 
 export function createApp() {
     const app = express();
