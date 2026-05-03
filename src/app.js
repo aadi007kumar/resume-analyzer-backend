@@ -13,10 +13,9 @@ export function createApp() {
 
     app.use(
         cors({
-          origin: "https://aadi007kumar.github.io",
+          origin: "*",
           methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
           allowedHeaders: ["Content-Type", "Authorization"],
-          credentials: true,
         })
       );
     app.options("*",cors());
